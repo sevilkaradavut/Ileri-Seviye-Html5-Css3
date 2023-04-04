@@ -1,0 +1,535 @@
+/* GENERAL SETTINGS */
+
+@font-face{
+    font family: 'Raleway';
+    src: url('../fonts/Raleway-Regular');
+}
+
+body{
+    background-color:gray;
+    color:3f3f3f;
+    font: 14px/28px;
+    font-family: 'Raleway', arial;
+}
+
+h1{
+    font-size: 52px;
+    letter-spacing: 4px;
+/*    margin-bottom: 20px;*/
+}
+.sectionHeader{
+    background-color: darkblue;
+    border:5px solid black;
+    border-radius: 10px;
+    height: 60px;
+    color: whitesmoke;
+    display: inline-block;
+    text-align: center;
+    line-height: 60px;
+    font-size: 24px;
+    padding: 5px 40px;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    }
+
+.sectionArea{
+    padding: 50px 0;
+}
+
+/* CONTAINER SETTINGS */
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+  display: flex; /* yan yana getiriyor*/
+}
+.featureTop{
+    text-align: center;
+}
+.featureBottom .container{
+    justify-content: space-between;
+}
+.column4{
+    flex-grow: 1;
+    width: 25%;
+}
+
+/* HOME SETTINGS */
+
+header .logo{
+    margin-right: auto;
+     
+}
+header .logo img{
+    display: block;
+    height: 90px;
+}
+
+.menu ul li{
+    float: left;
+}
+
+.menu ul li a{
+    padding: 27px 17px;
+    display: block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    color:darkblue;
+    font-weight: bold;
+}
+/*
+.menu ul li a:last-child{
+    padding-right: 0;
+}
+*/
+.menu ul li:hover{
+    background-color:lightblue;
+}
+
+#mainSection{
+    height: 500px;
+    background: url('../img/mainHome.jpg') center center no-repeat;
+    background-size: cover;
+   
+}
+.mainsection{
+    width: 100%;
+}
+#mainCaption{
+    height: 500px;
+    background: rgba(0, 0, 0, .5);
+}
+#featureSection p{
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+.caption{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 28px;
+}
+.item{
+    padding: 10px 20px;
+}
+.item:hover h3{
+    color:aliceblue;
+}
+
+.item:hover .itemText{
+    background-color: darkblue;
+    color:aliceblue;
+    transition: all .5s ease;
+}
+
+.zoom{
+/*    position: relative;*/
+    overflow: hidden;
+/*    display: inline-block;*/
+    width: 100%;
+/*    vertical-align: top;*/
+}
+.zoom img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.item .itemText{
+    text-align: center;
+    padding: 5px;
+    border: 2px solid darkblue;
+    height: 180px;
+    font-weight: bold;
+}
+.item:hover .zoom img{
+    transform: scale(1.25);
+    transition: all .5s ease;
+}
+h3{
+    color:darkblue;
+    font-weight: bold;
+}
+.btnDetails{
+    color:darkblue;
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid black;
+}
+.item:hover .btnDetails{
+ color:aliceblue;
+ border:1px solid aliceblue;
+}
+.item p{
+    margin:5px 0;
+}
+
+/* IMAGE SETTINGS */
+.imagesTop{
+    text-align: center;
+}
+
+.imagesBody .container{
+    justify-content: space-between;
+}
+
+.column2{
+ width: 48%;
+}
+.imagesContainer{
+    position: relative;
+    width: 100%;
+}
+.imageOver{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.imageOverlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,17,96,.7);
+    overflow: hidden;
+    width:0;
+    height: 100%;
+    transition: .5s ease;
+}
+.imagesContainer:hover .imageOverlay{
+    width: 100%;
+    }
+.imageText{
+    white-space: nowrap;
+    color:antiquewhite;
+    font-size: 20px;
+    text-align: center;
+    padding: 160px 0;
+    }
+footer{
+    background-color: darkblue;
+    text-align: center; 
+}
+.footerItem{
+    padding: 0 90px;
+}
+.footerItem img{
+    height: 70px;
+    opacity: .5;
+}
+footer h3{
+    color:aliceblue;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+footer .fa{
+    font-size: 30px;
+    color:darkgray;
+    line-height: 50px;
+    transition: .3s ease;
+}
+footer .fa:hover{
+    color:aliceblue;
+}
+footer p{
+    color:darkgray;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+.footerLinks a{
+    text-decoration: none;
+    color: darkgray;
+    letter-spacing: 2px;
+    transition: .3s ease;
+    line-height: 30px;
+}
+.footerLinks a:hover{
+    color:aliceblue;
+    text-decoration: underline;
+}
+.socialLinks li{
+   display: inline-block; /* yan yana getiriyor*/
+    width: 50px;
+    height: 50px;
+}
+
+
+
+/* DEFENSE SETTINGS */
+#defenseSection{
+    height: 300px;
+    background: url('../img/defenseActivities.jpg') center center no-repeat;
+    background-size: cover;  
+}
+#defenseSection h1{
+    text-align: center;
+    line-height: 300px;
+    color: midnightblue;
+    font-weight: bold;
+}
+.activitesTop{
+    text-align: center;
+}
+.activitesBottom .container{
+    padding: 30px 0;
+}
+.activitesBottom .column2{
+    display: flex;
+}
+.activitiesImage{
+    width: 40%;
+}
+.activitiesImage img{
+    width: 100%;
+    height: auto;
+}
+.activitiesText{
+    width: 55%;
+    padding-left: 10px;
+}
+.date{
+    color: black;
+    font-size: 12px;
+    font-style: italic;
+}
+h4{
+    color: midnightblue;
+    font-size: 14px;
+    font-weight: bold;
+}
+.activitiesText a{
+    float: right;
+    text-decoration: none;
+    color: mediumblue;
+    padding: 10px 0;
+}
+.activitiesText a:hover{
+    text-decoration: underline;
+}
+
+#generalActivites .generalActivitesBottom{
+    height: 400px;
+    background: url('../img/generalActivities.jpg') center center no-repeat;
+    background-size: cover;  
+}
+.generalActivitesTop{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.gaInfo{
+    padding: 40px;
+}
+.gaTitle{
+    font-size: 18px;
+    padding-left:20px;
+    letter-spacing: 2px;
+}
+.gaText{
+    padding-top:10px;
+    letter-spacing: 1px;
+}
+.gabtn{
+    font-size: 15px;
+    margin: 10px 5px;
+    color:midnightblue;
+    font-weight: bold;
+    background-color: lightblue;
+    cursor: pointer;
+}
+.gabtn:hover{
+    color: darkslateblue;
+}
+
+
+
+/* ABOUT SETTINGS */
+#aboutSection{
+    height: 310px;
+    background: url('../img/aboutImage.jpg') center center no-repeat;
+    background-size: cover;  
+}
+#aboutCaption{
+    height: 310px;
+    background: rgba(0, 0, 0, .4);
+}
+.historyTop{
+    text-align: center;
+}
+.historyBottom .containerFluid{
+    display: flex;
+   justify-content: space-between; /* container içerisinde eşit dağıtıyor boşlukları*/
+    margin-bottom: 20px;
+    height: 250px;
+}
+.historyBottom .column2{
+    display: flex;
+}
+.yearHistory{
+    flex: 1;
+    text-align: center;
+    background-color:darkred;
+    line-height: 250px;
+}
+.yearHistory p {
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: aliceblue;
+}
+.historyImage {
+    flex: 3;
+}
+.historyImage img {
+    width: 100%;
+    height: 100%;
+}
+.historyText {
+    flex: 2;
+    margin-left: 10px;
+}
+.historyText {
+   padding: 20px 0;
+}
+.presidencyTop{
+    text-align: center;
+}
+.presidencyBottom .containerFluid{
+    display: flex;
+    width: 100%;
+}
+.presidency{
+    position: relative;
+    width: 100%;
+    height: 300px;    
+}
+
+.presidencyImage{
+    display: block;  /* resimde yükseklik ve genişliği ayarlayabilmek için*/
+    width: 100%;
+    height: 100%;
+}
+.presidencyOverlay{
+    position: absolute;
+    top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    height: 100%;
+    width: 100%;
+    background-color: darkred;
+    transition: .5s ease;
+}
+.presidency:hover .presidencyOverlay{
+    opacity: 0;
+}
+.presidencyInfo{
+    display: none;
+    position: absolute;
+     top:0;
+    bottom:0;
+    right:0;
+    left:0;
+    text-align: center;
+    padding: 300px 0;
+   }
+.presidency:hover .presidencyInfo{
+    display: block;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+.presidencyTitle{
+    color: antiquewhite;
+    text-align: center;
+    line-height: 300px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+/* CONTACT SETTINGS */
+#contactSection{
+    height: 310px;
+    background: url('../img/contact.png') center center no-repeat;
+    background-size: cover;  
+}
+#contactCaption{
+    height: 310px;
+    background: rgba(0, 0, 0, .5);
+}
+.galleryTop{
+    text-align: center;
+}
+.gallerySlider{
+    overflow: hidden; /* yan yana geldiklerinde birbirlerinin üzerinde olmasın diye*/
+    width: 100%;
+    margin: 0 auto;
+}
+.gallerySliderItem{
+    width: 300%; /* yan yana olması için */
+    position: relative;
+    left: 0;
+    animation: slideAnimation 17s infinite;
+}
+.gallerySliderItem img{
+    width: 33.33%;
+    float: left;
+    height: 450px;
+}
+@keyframes slideAnimation{
+    0% { left:0; }
+    25% { left:-100%; }
+    50% { left:-200%; }
+    75% { left:-100%; }
+    100% { left:0; }
+    /* İlk yüzdeler zaman, diğerleri 0 olan 1.resim -100% olan 2 diğeride 3.resim */
+}
+
+.formTop{
+    text-align: center;
+}
+.wrapper{
+    margin: 0 auto; /* ortalama */
+    width: 100%;
+}
+.contactForm{
+     margin: 0 auto; /* ortalama */
+    width: 50%;
+}
+.formItem{
+    margin-bottom: 10px;
+    width: 100%;
+}
+.formShape{
+    color: gainsboro;
+    float: left;
+    background-color: darkblue;
+    padding: 8px;
+    width: 8%;
+    text-align: center;
+}
+.formField{
+    color: gainsboro;
+    background-color: darkblue;
+    border: none;
+    padding: 15.5px;
+    width: 92%;
+    font-size: 14px;
+}
+.formBtn{
+    display: block;
+    border: none;
+    background-color: darkred;
+    color: aliceblue;
+    width: 90px;
+    height: 50px;
+    margin: 0 470px;
+}
+.formBtn:hover{
+    background-color: red;
+    text-decoration: underline;
+}
